@@ -57,6 +57,7 @@ height: 600px;
 object-fit: cover;
 -o-object-fit: cover;
 z-index: -1;
+    width: 100%;
 }
 .hero-text {
     margin-top: 80px;
