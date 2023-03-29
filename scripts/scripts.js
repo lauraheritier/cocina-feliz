@@ -56,8 +56,8 @@ function updateTimer() {
 
   document.getElementById("timer")
     .innerHTML =
-      '<div class="timer-count col-lg-3">' + d + '<span> días</span></div>' +
-      '<div class="timer-count col-lg-3">' + h + '<span> horas</span></div>' +
-      '<div class="timer-count col-lg-3">' + m + '<span> minutos</span></div>' +
-      '<div class="timer-count col-lg-3">' + s + '<span> segundos</span></div>' ;
+      '<div class="timer-count col-3">' + d + '<span class="d-inline-block w-100"> días</span></div>' +
+      '<div class="timer-count col-3">' + h + '<span class="d-inline-block w-100"> horas</span></div>' +
+      '<div class="timer-count col-3">' + m + '<span class="d-inline-block w-100"> minutos</span></div>' +
+      '<div class="timer-count col-3">' + s + '<span class="d-inline-block w-100"> segundos</span></div>' ;
 }
