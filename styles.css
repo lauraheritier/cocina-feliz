@@ -168,6 +168,18 @@ width: 200px;
 .fa-hand-holding-hand {
     font-size: 200px;    
 }
+#timer {
+    margin-top: 24px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.timer-count {
+    font-weight: 700;
+}
+.timer-count:not(span) {
+    font-size: 32px;
+}
 @media only screen and (max-width: 992px) {
     .sample, .hand-container {
         margin-top: 40px;
