@@ -132,6 +132,10 @@ div#section-info .counter-container * {
     font-size: 64px;
     font-weight: 700;
 }
+div#section-info .counter {
+display: inline-block;
+width: 200px; 
+}
 .heading {
     text-transform: uppercase;
     font-size: 32px;
