@@ -195,7 +195,7 @@ width: 200px;
 }
 @media only screen and (max-width: 576px) {
     .hero {
-    min-width: 900px;
+    min-height: 900px;
     }
 }
 @media only screen and (max-width: 992px) {
