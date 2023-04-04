@@ -193,7 +193,11 @@ width: 200px;
     font-size: 24px;
     font-weight: 400;
 }
-
+@media only screen and (max-width: 576px) {
+    .hero {
+    min-width: 900px;
+    }
+}
 @media only screen and (max-width: 992px) {
     .sample, .hand-container {
         margin-top: 40px;
