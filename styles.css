@@ -208,6 +208,15 @@ width: 200px;
     .hero .img-fluid.bg {
         height: 900px;
     }
+    div#section-info .counter-container * {
+        font-size: 46px;
+    }
+    div#section-info .col-lg-4 {
+        margin-bottom: 48px;
+    }
+    div#section-info .counter {
+    display: inline;
+    }
 }
 @media only screen and (min-width: 992px) {    
 .hero img:not(.bg) {
@@ -230,4 +239,8 @@ width: 200px;
     .hero-text .col-lg-12 {
         margin-top: 127px;
     }
+    p.legend {
+    max-width: 316px;
+    margin: 0 auto;
+}
 }
