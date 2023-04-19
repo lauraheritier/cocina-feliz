@@ -193,6 +193,9 @@ width: 200px;
     font-size: 24px;
     font-weight: 400;
 }
+#section-info .goal span, #section-info .goal p.legend {
+color: #d31d1d;
+}
 @media only screen and (max-width: 576px) {
     .hero {
     min-height: 900px;
