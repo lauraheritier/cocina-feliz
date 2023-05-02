@@ -196,6 +196,68 @@ width: 200px;
 #section-info .goal span, #section-info .goal p.legend {
 color: #1d7607;
 }
+.swiper-slide {
+   position: relative;
+   min-height: 734px;
+    max-height: 734px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.swiper-pagination-bullet-active {
+    background-color: #f6ff00;
+}
+.swiper-slide img {
+   object-fit: cover;
+    -o-object-fit: cover;
+    height: 734px;
+    width: 100%;
+}
+video {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.swiper-slide .fa-solid {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 9999;
+    font-size: 84px;
+    text-align: center;
+    color: rgba(246, 255, 0, 0.68);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+#campaign {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: rgba(246, 255, 0, 0.68);
+}
+.colaboration {
+   font-size: 24px;
+    font-weight: 900;
+}
+.colaboration-row {
+    background-color: #FFFFFF;
+    padding: 40px 0;
+}
+.colaboration-row .col-lg-6 {
+    display: flex;
+    align-items: center;
+}
+.title, .text {
+    text-align: center;
+}
+.title {
+    font-family: Raleway, sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.text {
+    font-size: 24px;
+}
 @media only screen and (max-width: 576px) {
     .hero {
     min-height: 900px;
@@ -219,6 +281,10 @@ color: #1d7607;
     }
     div#section-info .counter {
     display: inline;
+    }
+    .swiper-slide img {
+        object-fit: contain;
+     -o-object-fit: contain;
     }
 }
 @media only screen and (min-width: 992px) {    
@@ -246,4 +312,12 @@ color: #1d7607;
     max-width: 316px;
     margin: 0 auto;
 }
+.swiper-slide {
+    min-height: 640px;
+     max-height: 640px;    
+}
+ .swiper-slide img {
+     height: 640px;
+     width: 100%;     
+ }
 }

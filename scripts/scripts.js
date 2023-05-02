@@ -1,5 +1,7 @@
+var v = document.getElementById("video");
+      var icon = document.getElementById("icon"); 
 $(document).ready(function() {
-  AOS.init();
+  AOS.init();  
     $(".nav-item").on("click", function() {
         $(this).addClass("active");
         $(this).siblings().removeClass("active");
@@ -14,8 +16,46 @@ $(document).ready(function() {
       });
       
       setInterval('updateTimer()', 1000 );
+      var mySwiper = new Swiper ('.swiper', {
+        // Optional parameters
+        slidesPerView: 1,
+            centeredSlides: true,
+            spaceBetween: 10,
+            loop: true,
+      
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+        breakpoints: {
+          // when window width is >= 640px
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    }
+        }
+            
+      });
+       
+      playPause(v);
+      playPause(icon);
+
 });
 
+function playPause(element) {
+  element.addEventListener ("click", function () {        
+    if($(v).hasClass("stopped")) {
+      $(v).removeClass("stopped");
+      $(icon).removeClass("fa-play");
+      $(icon).removeClass("fa-pause");              
+      v.play();                
+    } else {
+      v.pause();
+      $(v).addClass("stopped");
+      $(icon).addClass("fa-pause"); 
+    }
+  }, true); 
+}
 function initCounter () {
     $('.counter').each(function() {
         var $this = $(this),
