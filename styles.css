@@ -9,6 +9,9 @@ overflow-x: hidden;
 header nav ul.navbar-nav {
     flex-direction: row;
 }
+.video-container video {
+max-width: 320px;
+}
 header nav.navbar {
     justify-content: flex-end;
 }
