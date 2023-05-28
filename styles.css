@@ -12,6 +12,10 @@ header nav ul.navbar-nav {
 .video-container video {
 max-width: 320px;
 }
+#campaign ul {
+    max-width: 320px;
+    margin: 0 auto 16px;
+}
 header nav.navbar {
     justify-content: flex-end;
 }
